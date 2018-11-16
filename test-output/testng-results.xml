@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="4786" started-at="2018-11-16T13:02:22Z" finished-at="2018-11-16T13:02:26Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="4786" started-at="2018-11-16T13:02:22Z" finished-at="2018-11-16T13:02:26Z">
+      <class name="PageObject.Humingo_Demo.TestHUM01VerifyLogin">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:PageObject.Humingo_Demo.TestHUM01VerifyLogin@69a3d1d]" name="beforeSuite" is-config="true" duration-ms="108" started-at="2018-11-16T13:02:21Z" finished-at="2018-11-16T13:02:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="testVerifyLogin()[pri:0, instance:PageObject.Humingo_Demo.TestHUM01VerifyLogin@69a3d1d]" name="testVerifyLogin" duration-ms="4002" started-at="2018-11-16T13:02:22Z" finished-at="2018-11-16T13:02:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testVerifyLogin -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:PageObject.Humingo_Demo.TestHUM01VerifyLogin@69a3d1d]" name="getResult" is-config="true" duration-ms="763" started-at="2018-11-16T13:02:26Z" finished-at="2018-11-16T13:02:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testVerifyLogin status=SUCCESS method=TestHUM01VerifyLogin.testVerifyLogin()[pri:0, instance:PageObject.Humingo_Demo.TestHUM01VerifyLogin@69a3d1d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:PageObject.Humingo_Demo.TestHUM01VerifyLogin@69a3d1d]" name="afterSuite" is-config="true" duration-ms="278" started-at="2018-11-16T13:02:26Z" finished-at="2018-11-16T13:02:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- PageObject.Humingo_Demo.TestHUM01VerifyLogin -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
