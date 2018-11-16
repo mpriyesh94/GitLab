@@ -194,7 +194,7 @@ public class WebActions {
 						System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE,"/dev/null");
 						driver = new FirefoxDriver();
 					}else if(System.getenv("Browser").equalsIgnoreCase("chrome")) {
-						System.setProperty("webdriver.chrome.driver", "D:\\Workspace\\Demo\\humingo-demo\\lib\\chromedriver.exe");
+						System.setProperty("webdriver.chrome.driver", dir1.getCanonicalPath()+ File.separator +"lib"+ File.separator +"chromedriver.exe");
 						driver = new ChromeDriver();
 					}
 				}else if(System.getenv("Browser")==null) {
