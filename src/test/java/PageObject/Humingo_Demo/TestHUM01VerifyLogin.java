@@ -13,6 +13,10 @@ public class TestHUM01VerifyLogin extends WebActions{
 		launchDriver();
 		Log.getReport(message);
 		
+		message = incrementSteps()+" Login To Application";
+		loginToAnApplication();
+		Log.getReport(message);
+		
 	}catch(Exception e) {
 		e.printStackTrace();
 	}

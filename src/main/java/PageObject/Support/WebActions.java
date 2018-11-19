@@ -186,34 +186,33 @@ public class WebActions {
 		File dir1 = new File(".");
 		try {
 			if(driver == null) {
-				
-				if(System.getenv("Browser")!=null) {
-					if(System.getenv("Browser").equalsIgnoreCase("firefox")) {
-						System.setProperty("webdriver.gecko.driver", "C:\\WebdriverPath\\drivers\\geckodriver.exe");
-						System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE,"true");
-						System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE,"/dev/null");
-						driver = new FirefoxDriver();
-					}else if(System.getenv("Browser").equalsIgnoreCase("chrome")) {
-						System.setProperty("webdriver.chrome.driver", dir1.getCanonicalPath()+ File.separator +"lib"+ File.separator +"chromedriver.exe");
-						driver = new ChromeDriver();
-					}
-				}else if(System.getenv("Browser")==null) {
-					if (browser.trim().toLowerCase().equals("firefox")) {
-						System.setProperty("webdriver.gecko.driver", "C:\\WebdriverPath\\drivers\\geckodriver.exe");
-						System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE,"true");
-						System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE,"/dev/null");
-						driver = new FirefoxDriver();
-					}else if(browser.trim().toLowerCase().equals("chrome")) {
+				 if(browser.trim().toLowerCase().equals("chrome")) {
 						System.setProperty("webdriver.chrome.driver", "C:\\WebdriverPath\\drivers\\chromedriver.exe");
 						driver = new ChromeDriver();
 					}
-				}
 			}
 		} catch (Exception e) {
 			Assert.fail("Could not launch Webdriver");
 		}
 	}
 
+	
+	public void loginToAnApplication() {
+
+		try {
+			driver.get("http://www.google.com");
+			WebElement element = driver.findElement(By.name("q"));
+
+			 element.sendKeys("BrowserStack");
+			 element.submit();
+
+			System.out.println(driver.getTitle());
+
+		} catch (AssertionError e) {
+			e.printStackTrace();
+			Assert.fail("Could not login to the application");
+		}
+	}
 	/**
 	 * This method is used to get url from config properties.
 	 */

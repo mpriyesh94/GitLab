@@ -1,1 +1,4 @@
-/target/
+src/reports/
+bin/
+test-output/
+target/

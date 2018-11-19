@@ -180,6 +180,13 @@
 			<artifactId>jira-client</artifactId>
 			<version>0.5</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/software.reinvent/headless-chrome -->
+		<dependency>
+		    <groupId>software.reinvent</groupId>
+		    <artifactId>headless-chrome</artifactId>
+		    <version>0.3.0</version>
+		</dependency>
+		
 		
 	</dependencies>
 	
